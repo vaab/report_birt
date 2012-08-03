@@ -1,0 +1,37 @@
+<openerp>
+  <data>
+
+    <!-- Tree -->
+
+    <record id="mapping_tree" model="ir.ui.view">
+      <field name="name">report_birt.parameter.tree</field>
+      <field name="model">report_birt.parameter</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+          <field name="is_literal" />
+          <field name="identifier" />
+          <field name="value" />
+      </field>
+    </record>
+
+    <!-- Form -->
+
+    <record id="mapping_form" model="ir.ui.view">
+      <field name="name">report_birt.parameter.form</field>
+      <field name="model">report_birt.parameter</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="SQL Query">
+          <group>
+            <field name="identifier" />
+            <field name="is_literal" />
+          </group>
+          <group>
+            <field name="value" />
+          </group>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</openerp>

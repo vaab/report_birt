@@ -1,0 +1,24 @@
+<openerp>
+  <data>
+    <record id="act_report_birt_view" model="ir.ui.view">
+      <field name="name">ir.actions.report.xml.inherit</field>
+      <field name="model">ir.actions.report.xml</field>
+      <field name="inherit_id" ref="base.act_report_xml_view"/>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <xpath expr="/form/notebook/page[@string='Security']" position="before" >
+          <page string="Birt" attrs="{'invisible':[('report_type','!=','birt')]}">
+            <group colspan="2" col="2">
+              <separator colspan="4" string="Birt General Options" />
+              <field name="birt_url" />
+              <field name="birt_report" />
+              <field name="birt_format" />
+              <separator colspan="4" string="Birt Parameters" />
+              <field name="birt_report_params" nolabel="1" widget="one2many_list" colspan="4" />
+            </group>
+          </page>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</openerp>
