@@ -61,11 +61,11 @@ class BirtProxyFactory(report_webkit.webkit_report.WebKitParser):
 
         local = dict((k, getattr(obj, k)) for k, v in fields_def.iteritems())
 
-        params = dict((o['identifier'],
-                       o['value'] if o['is_literal'] else
+        params = dict((o['name'],
+                       o['value'] if not o['eval'] else
                          eval(o['value'], globals(), local))
                       for o in report_birt.birt_report_params)
- 
+
         birt_factory = birt.BirtConnection(report_birt.birt_url)
 
         return birt_factory(report_file, format, params)

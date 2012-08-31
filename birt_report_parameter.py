@@ -8,23 +8,25 @@ class Parameter(osv.osv):
     _name = 'report_birt.parameter'
 
     _columns = {
-        'identifier': fields.char(
-            'Identifier',
-            size=256,
-            help="Identifier Label",
+        'name': fields.char(
+            'Name',
+            size=64,
+            help="Param Label",
             required=True),
-        'is_literal': fields.boolean(
-            'Fixed String',
-            help="should the identifier considered as a direct fixed string?"),
         'value': fields.char(
             'Value',
             size=256,
             help="As Label",
             required=True),
+        'eval': fields.boolean(
+            'Eval',
+            help="should the value be evaled as python string ?"),
         'parent_id': fields.many2one(
             'ir.actions.report.xml',
             'parent object'),
     }
 
-    _defaults = {}
+    _defaults = {
+        "eval": True
+    }
 
