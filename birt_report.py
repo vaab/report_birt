@@ -60,6 +60,10 @@ class BirtProxyFactory(report_webkit.webkit_report.WebKitParser):
         format = report_birt.birt_format
 
         local = dict((k, getattr(obj, k)) for k, v in fields_def.iteritems())
+        local.update(context)
+        local['user'] = pooler.get_pool(cr.dbname) \
+                      .get('res.users') \
+                      .browse(cr, uid, context['uid'], context=context)
 
         params = dict((o['name'],
                        o['value'] if not o['eval'] else
