@@ -55,10 +55,10 @@ class BirtProxyFactory(report_webkit.webkit_report.WebKitParser):
         objs = table_obj.browse(cr, uid, ids, list_class=None, context=context, fields_process=None)
         obj = objs[0]
         fields_def = obj._table.fields_get(cr, uid, None, context)
-        
+
         report_file = report_birt.birt_report
         format = report_birt.birt_format
-        
+
         local = dict((k, getattr(obj, k)) for k, v in fields_def.iteritems())
 
         params = dict((o['identifier'],
@@ -103,7 +103,7 @@ class BirtProxyFactory(report_webkit.webkit_report.WebKitParser):
         ir_obj = pool.get('ir.actions.report.xml')
         report_xml_ids = ir_obj.search(cr, uid,
                 [('report_name', '=', self.name[7:])], context=context)
-        
+
         if report_xml_ids:
             report_xml = ir_obj.browse(
                                         cr,
