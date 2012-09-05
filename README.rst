@@ -31,7 +31,14 @@ Was tested successfully with:
  - OpenERP 6.1
  - OpenERP 7.0
 
-You'll need a running instance of ``birt-viewer`` of course.
+``report_birt`` needs the python ``requests`` module (`Requests: HTTP for Humans`_)
+to be installed. You could install it with::
+
+  pip install requests
+
+.. _requests\: http for humans: http://docs.python-requests.org/en/latest/index.html
+
+Then, you'll need a running instance of ``birt-viewer`` of course.
 
 You can download it here:
 
