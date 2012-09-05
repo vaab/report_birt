@@ -5,7 +5,7 @@
     "description" : """This module adds a new Report Engine which uses BIRT to create report
 The module structure and some code is inspired by the report_webkit module.
 """,
-    "version": "0.1",
+    "version": "%%short-version%%",
     "depends": ["base"],
     "author": "Valentin LAB -- Simplee.fr",
     "category": "Reports/Xml",
