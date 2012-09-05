@@ -18,87 +18,87 @@ msgstr ""
 #. module: report_birt
 #: field:report_birt.parameter,parent_id:0
 msgid "parent object"
-msgstr "objet parent"
+msgstr ""
 
 #. module: report_birt
 #: help:report_birt.parameter,name:0
 msgid "Param Label"
-msgstr "Nom du Paramêtre"
+msgstr ""
 
 #. module: report_birt
 #: view:report_birt.parameter:0
 msgid "Report Parameter"
-msgstr "Paramêtre du rapport"
+msgstr ""
 
 #. module: report_birt
 #: field:report_birt.parameter,name:0
 msgid "Name"
-msgstr "Nom"
+msgstr ""
 
 #. module: report_birt
 #: model:ir.model,name:report_birt.model_report_birt_parameter
 msgid "report_birt.parameter"
-msgstr "report_birt.parameter"
+msgstr ""
 
 #. module: report_birt
 #: view:ir.actions.report.xml:0
 msgid "Birt Parameters"
-msgstr "Paramêtres BIRT"
+msgstr ""
 
 #. module: report_birt
 #: view:report_birt.parameter:0
 msgid "SQL Query"
-msgstr "Requête SQL"
+msgstr ""
 
 #. module: report_birt
 #: help:report_birt.parameter,eval:0
 msgid "should the value be evaled as python string ?"
-msgstr "la valeur doit-elle être évaluée par python ?"
+msgstr ""
 
 #. module: report_birt
 #: field:ir.actions.report.xml,birt_report_params:0
 #: help:ir.actions.report.xml,birt_report_params:0
 msgid "BIRT report params"
-msgstr "Paramêtres du rapport BIRT"
+msgstr ""
+
+#. module: report_birt
+#: view:ir.actions.report.xml:0
+msgid "Birt"
+msgstr ""
 
 #. module: report_birt
 #: field:report_birt.parameter,value:0
 #: help:report_birt.parameter,value:0
 msgid "Value"
-msgstr "Valeur"
-
-#. module: report_birt
-#: view:ir.actions.report.xml:0
-msgid "Birt"
-msgstr "Birt"
-
-#. module: report_birt
-#: field:ir.actions.report.xml,birt_report:0
-msgid "Report file"
-msgstr "Fichier du rapport"
-
-#. module: report_birt
-#: view:ir.actions.report.xml:0
-msgid "Birt General Options"
-msgstr "Options Générales de Birt"
-
-#. module: report_birt
-#: field:report_birt.parameter,eval:0
-msgid "Eval"
-msgstr "Évaluer"
-
-#. module: report_birt
-#: field:ir.actions.report.xml,birt_url:0
-msgid "BIRT Viewer URL"
-msgstr "URL du Visionneur BIRT"
+msgstr ""
 
 #. module: report_birt
 #: field:ir.actions.report.xml,birt_format:0
 msgid "Output format"
-msgstr "Format de Sortie"
+msgstr ""
+
+#. module: report_birt
+#: field:ir.actions.report.xml,birt_report:0
+msgid "Report file"
+msgstr ""
+
+#. module: report_birt
+#: view:ir.actions.report.xml:0
+msgid "Birt General Options"
+msgstr ""
+
+#. module: report_birt
+#: field:report_birt.parameter,eval:0
+msgid "Eval"
+msgstr ""
+
+#. module: report_birt
+#: field:ir.actions.report.xml,birt_url:0
+msgid "BIRT Viewer URL"
+msgstr ""
 
 #. module: report_birt
 #: model:ir.model,name:report_birt.model_ir_actions_report_xml
 msgid "ir.actions.report.xml"
-msgstr "ir.actions.report.xml"
+msgstr ""
 

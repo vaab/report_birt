@@ -96,7 +96,7 @@ class ReportBIRT(osv.osv):
         'birt_report': fields.char('Report file', size=64,),
         'birt_format': fields.char('Output format', size=32),
         'birt_report_params' : fields.one2many('report_birt.parameter', 'parent_id', 'BIRT report params',
-                                               help="Enable the xml report engine debugger"),
+                                               help="BIRT report params"),
     }
 
     _defaults = {

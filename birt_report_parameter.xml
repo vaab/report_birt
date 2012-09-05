@@ -8,7 +8,7 @@
       <field name="model">report_birt.parameter</field>
       <field name="type">tree</field>
       <field name="arch" type="xml">
-        <tree editable="bottom" colors="blue:eval">
+        <tree editable="bottom" colors="blue:eval" string="Report Parameter">
           <field name="name" />
           <field name="value" />
           <field name="eval" />

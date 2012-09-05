@@ -16,7 +16,7 @@ class Parameter(osv.osv):
         'value': fields.char(
             'Value',
             size=256,
-            help="As Label",
+            help="Value",
             required=True),
         'eval': fields.boolean(
             'Eval',
