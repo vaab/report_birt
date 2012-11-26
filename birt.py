@@ -11,4 +11,4 @@ class BirtConnection(object):
                      "__format": format}
         settings.update(params)
         r = requests.get(self.url, params=settings)
-        return (r.content, 'pdf')
+        return (r.content, format)
