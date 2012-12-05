@@ -30,3 +30,6 @@ class Parameter(osv.osv):
         "eval": True
     }
 
+## Compatibility with 6.0.3
+Parameter()
+
