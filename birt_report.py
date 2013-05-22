@@ -83,7 +83,7 @@ class BirtProxyFactory(report_webkit.webkit_report.WebKitParser):
             context={}
 
         if report_birt.report_type != 'birt':
-            return super(XmlParser,self).create_single_pdf(cr, uid, ids, data, report_birt, context=context)
+            return super(BirtProxyFactory, self).create_single_pdf(cr, uid, ids, data, report_birt, context=context)
 
         return self.create_single_birt(cr, uid, ids, data, report_birt, context)
 
