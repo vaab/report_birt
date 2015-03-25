@@ -6,7 +6,10 @@
 The module structure and some code is inspired by the report_webkit module.
 """,
     "version": "%%short-version%%",
-    "depends": ["base"],
+    "depends": [
+        "base",
+        "report_webkit",
+    ],
     "author": "Valentin LAB -- Simplee.fr",
     "category": "Reports/Xml",
     "url": "http://github.com/simplee/report_birt",
