@@ -10,7 +10,7 @@ The module structure and some code is inspired by the report_webkit module.
         "base",
         "report_webkit",
     ],
-    "author": "Valentin LAB -- Simplee.fr",
+    "author": "Valentin LAB",
     "category": "Reports/Xml",
     "url": "http://github.com/simplee/report_birt",
     "data": [ "security/ir.model.access.csv",
