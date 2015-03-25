@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from osv import osv, fields
+from openerp.osv import osv, fields
 
 
 class Parameter(osv.osv):

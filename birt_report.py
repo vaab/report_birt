@@ -3,17 +3,17 @@
 import logging
 import traceback
 
-import netsvc
-import pooler
+from openerp import netsvc
+from openerp import pooler
 
-import report_webkit
+from openerp.addons import report_webkit
 
-from report.report_sxw import *
-from tools.translate import _
-from osv.osv import except_osv
-from osv.orm import except_orm
+from openerp.report.report_sxw import *
+from openerp.tools.translate import _
+from openerp.osv.osv import except_osv
+from openerp.osv.orm import except_orm
 
-from tools.safe_eval import safe_eval as eval
+from openerp.tools.safe_eval import safe_eval as eval
 
 from . import birt
 

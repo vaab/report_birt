@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import netsvc
+from openerp import netsvc
 
-from osv import osv, fields
+from openerp.osv import osv, fields
 from birt_report import BirtProxyFactory
-from report.report_sxw import rml_parse
+from openerp.report.report_sxw import rml_parse
 
 
 def register_report(name, model, tmpl_path, parser=rml_parse):
